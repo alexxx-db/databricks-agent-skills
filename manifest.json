@@ -200,8 +200,8 @@
       "repo_dir": "skills",
       "version": "0.1.0"
     },
-    "databricks-genie": {
-      "description": "Create and query Databricks Genie Spaces for natural language SQL exploration. Use when building Genie Spaces, exporting and importing Genie Spaces, migrating Genie Spaces between workspaces or environments, or asking questions via the Genie Conversation API.",
+    "databricks-genie-agents": {
+      "description": "Create, manage, and query Databricks Genie Agents \u2014 curated, per-data natural-language agents (formerly Genie Spaces): build, export/import, migrate across workspaces, and ask questions of a *specific* Agent via the Conversation API. For general data questions or finding data across your workspace, use databricks-data-discovery (Genie One) instead.",
       "files": [
         "SKILL.md",
         "agents/openai.yaml",
