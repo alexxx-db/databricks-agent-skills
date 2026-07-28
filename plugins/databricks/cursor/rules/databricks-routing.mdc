@@ -17,6 +17,7 @@ that matches the request:
 - Vector Search / RAG -> databricks-vector-search
 - Classic-to-serverless migration -> databricks-serverless-migration
 - Data discovery / finding & exploring data / natural-language data Q&A / SQL generation (Genie) -> databricks-data-discovery
+- Genie Agents (formerly Genie Spaces): building, managing & tuning a curated per-data Genie Agent -> databricks-genie-agents
 - Agent Bricks / Knowledge Assistants / Genie Spaces / Multi-Agent Supervisor -> databricks-agent-bricks
 - AI Functions (ai_query, ai_classify, ai_extract, ai_parse_document) -> databricks-ai-functions
 - AI/BI dashboards -> databricks-aibi-dashboards

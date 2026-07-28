@@ -201,15 +201,15 @@
       "version": "0.1.0"
     },
     "databricks-genie-agents": {
-      "description": "Create, manage, and query Databricks Genie Agents \u2014 curated, per-data natural-language agents (formerly Genie Spaces): build, export/import, migrate across workspaces, and ask questions of a *specific* Agent via the Conversation API. For general data questions or finding data across your workspace, use databricks-data-discovery (Genie One) instead.",
+      "description": "Create, manage, and query Databricks Genie Agents \u2014 curated, per-data natural-language agents (formerly Genie Spaces): build, export/import, migrate across workspaces, and ask questions of a *speci...",
       "files": [
         "SKILL.md",
         "agents/openai.yaml",
         "assets/databricks.png",
         "assets/databricks.svg"
       ],
-      "repo_dir": "experimental",
-      "version": "0.0.1"
+      "repo_dir": "skills",
+      "version": "0.1.0"
     },
     "databricks-iceberg": {
       "description": "Apache Iceberg tables on Databricks \u2014 Managed Iceberg tables, External Iceberg Reads (fka Uniform), Compatibility Mode, Iceberg REST Catalog (IRC), Iceberg v3, Snowflake interop, PyIceberg, OSS Spa...",

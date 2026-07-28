@@ -29,6 +29,7 @@
     "dbsql",
     "docs",
     "execution-compute",
+    "genie-agents",
     "iceberg",
     "lakeflow-connect",
     "metric-views",
