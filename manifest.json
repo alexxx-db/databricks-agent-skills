@@ -368,6 +368,7 @@
         "references/performance.md",
         "references/pipeline-configuration.md",
         "references/python-basics.md",
+        "references/real-time-mode.md",
         "references/scd-2-querying.md",
         "references/sink-python.md",
         "references/sql-basics.md",
