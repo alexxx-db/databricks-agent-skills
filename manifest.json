@@ -86,6 +86,7 @@
         "references/appkit/genie.md",
         "references/appkit/jobs.md",
         "references/appkit/lakebase.md",
+        "references/appkit/metric-views.md",
         "references/appkit/model-serving.md",
         "references/appkit/overview.md",
         "references/appkit/proto-contracts.md",
@@ -96,7 +97,7 @@
         "references/testing.md"
       ],
       "repo_dir": "skills",
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     "databricks-apps-python": {
       "description": "Python backend for Databricks Apps \u2014 FastAPI (default), Flask, Dash, Streamlit, Gradio, Reflex. **Default for a new Databricks App is `databricks-apps` (AppKit \u2014 Node/TypeScript/React) \u2014 reach for...",
@@ -207,7 +208,14 @@
         "SKILL.md",
         "agents/openai.yaml",
         "assets/databricks.png",
-        "assets/databricks.svg"
+        "assets/databricks.svg",
+        "references/create-genie-agent.md",
+        "references/diagnose-genie-agent.md",
+        "references/genie-agent-cicd.md",
+        "references/optimize-genie-agent.md",
+        "references/query-genie-agent.md",
+        "references/serialized-space.md",
+        "references/uc-persistence.md"
       ],
       "repo_dir": "skills",
       "version": "0.1.0"
@@ -283,9 +291,9 @@
         "agents/openai.yaml",
         "assets/databricks.png",
         "assets/databricks.svg",
+        "references/create-patterns.md",
         "references/metric-view-advisor.md",
-        "references/patterns.md",
-        "references/yaml-reference.md"
+        "references/query-patterns.md"
       ],
       "repo_dir": "skills",
       "version": "0.1.0"
