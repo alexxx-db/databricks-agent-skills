@@ -29,7 +29,7 @@
       "version": "0.2.0"
     },
     "databricks-ai-runtime": {
-      "description": "Databricks AI Runtime (`air`) CLI \u2014 the command-line tool for submitting and managing GPU training workloads on Databricks serverless compute. Use for: running `air` workloads, custom Docker image setup, environment configuration, and troubleshooting `air` jobs.",
+      "description": "Databricks AI Runtime, the `databricks air` CLI commands for submitting and managing GPU training workloads on Databricks serverless compute. Use for: writing and submitting `databricks air` workload YAML, passing hyperparameters and secrets, checking run status, listing/cancelling runs, streaming a run's logs and watching its progress, custom Docker image setup, and environment configuration.",
       "files": [
         "SKILL.md",
         "agents/openai.yaml",
@@ -38,7 +38,7 @@
         "docker-images.md"
       ],
       "repo_dir": "experimental",
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     "databricks-aibi-dashboards": {
       "description": "Create Databricks AI/BI dashboards. Must use when creating, updating, or deploying Lakeview dashboards as Databricks Dashboard have a unique json structure. CRITICAL: You MUST test ALL SQL queries...",
