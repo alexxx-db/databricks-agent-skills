@@ -251,7 +251,7 @@
         "references/triggers-schedules.md"
       ],
       "repo_dir": "skills",
-      "version": "0.2.0"
+      "version": "0.3.0"
     },
     "databricks-lakebase": {
       "description": "Databricks Lakebase Postgres: projects, scaling, connectivity, Lakebase synced tables, and Data API.",
