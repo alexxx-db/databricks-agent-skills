@@ -1,0 +1,45 @@
+---
+trigger: model_decision
+description: "Routing for any Databricks task -- CLI, auth, profiles, data exploration, Jobs/Lakeflow, Spark Declarative Pipelines (formerly DLT), Apps/AppKit, Asset Bundles/DABs, Model Serving, Unity Gateway, Lakebase/Postgres, Vector Search/RAG, Genie, and classic-to-serverless migration. Apply when the request is Databricks-related so the Databricks skills are loaded instead of ad hoc commands."
+---
+
+This request is Databricks-related. Handle it through the Databricks skills
+rather than ad hoc commands. Load the `databricks-core` skill first (the parent:
+CLI, auth, profile selection, data exploration), then load the product skill
+that matches the request:
+
+- Jobs / Lakeflow / workflows -> databricks-jobs
+- Pipelines / Lakeflow Spark Declarative Pipelines (formerly DLT) -> databricks-pipelines
+- Apps / AppKit -> databricks-apps
+- Asset Bundles / DABs / databricks.yml -> databricks-dabs
+- Model Serving / endpoints -> databricks-model-serving
+- Lakebase / Postgres -> databricks-lakebase
+- Vector Search / RAG -> databricks-vector-search
+- Compute for new jobs and pipelines / serverless vs classic / STANDARD vs PERFORMANCE_OPTIMIZED -> databricks-serverless
+- Classic-to-serverless migration -> databricks-serverless-migration
+- Data discovery / finding & exploring data / natural-language data Q&A / SQL generation (Genie) -> databricks-data-discovery
+- Genie Agents (formerly Genie Spaces): building, managing & tuning a curated per-data Genie Agent -> databricks-genie-agents
+- Agent Bricks / Knowledge Assistants / Genie Spaces / Multi-Agent Supervisor -> databricks-agent-bricks
+- AI Functions (ai_query, ai_classify, ai_extract, ai_parse_document) -> databricks-ai-functions
+- AI Runtime (AIR) / serverless GPU training / custom training Docker images -> databricks-ai-runtime
+- AI/BI dashboards -> databricks-aibi-dashboards
+- Python data apps (Streamlit, Dash, Gradio, Flask, FastAPI) -> databricks-apps-python
+- Databricks SQL warehouses -> databricks-dbsql
+- Databricks documentation lookup (llms.txt) -> databricks-docs
+- Executing code on Databricks compute -> databricks-execution-compute
+- Local Python environment matched to Databricks compute (setup-local, Databricks Connect) -> databricks-setup-local
+- Apache Iceberg tables / UniForm / Iceberg REST Catalog -> databricks-iceberg
+- Lakeflow Connect managed ingestion connectors -> databricks-lakeflow-connect
+- Metric Views / governed metrics -> databricks-metric-views
+- ML model training -> databricks-ml-training
+- MLflow agent / GenAI evaluation -> databricks-mlflow-evaluation
+- Python SDK / Databricks Connect / REST API -> databricks-python-sdk
+- Spark Structured Streaming -> databricks-spark-structured-streaming
+- Synthetic / test data generation (Faker) -> databricks-synthetic-data-gen
+- Unity Catalog governance, access control & system tables -> databricks-unity-catalog
+- Unity Gateway (formerly Unity AI Gateway): model services, MCP services & model provider services -> databricks-unity-gateway
+- Synthetic PDF generation for RAG -> databricks-unstructured-pdf-generation
+- Zerobus streaming ingest -> databricks-zerobus-ingest
+
+Then follow the skill's guidance (it drives the `databricks` CLI). If no product
+skill fits, databricks-core alone is enough.
