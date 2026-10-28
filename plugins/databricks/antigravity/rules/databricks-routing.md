@@ -18,8 +18,7 @@ that matches the request:
 - Compute for new jobs and pipelines / serverless vs classic / STANDARD vs PERFORMANCE_OPTIMIZED -> databricks-serverless
 - Classic-to-serverless migration -> databricks-serverless-migration
 - Data discovery / finding & exploring data / natural-language data Q&A / SQL generation (Genie) -> databricks-data-discovery
-- Genie Agents (formerly Genie Spaces): building, managing & tuning a curated per-data Genie Agent -> databricks-genie-agents
-- Agent Bricks / Knowledge Assistants / Genie Spaces / Multi-Agent Supervisor -> databricks-agent-bricks
+- Genie Agents (formerly Genie Spaces): building, managing & tuning a curated Genie Agent over tables and documents; document Q&A / chat with PDFs; replaces Knowledge Assistant & Supervisor Agent (legacy) -> databricks-genie-agents
 - AI Functions (ai_query, ai_classify, ai_extract, ai_parse_document) -> databricks-ai-functions
 - AI Runtime (AIR) / serverless GPU training / custom training Docker images -> databricks-ai-runtime
 - AI/BI dashboards -> databricks-aibi-dashboards

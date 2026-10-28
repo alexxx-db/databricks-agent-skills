@@ -1,21 +1,8 @@
 {
   "//": "GENERATED FILE: DO NOT EDIT. Run `python3 scripts/skills.py generate` to regenerate.",
   "skills": {
-    "databricks-agent-bricks": {
-      "description": "Create Agent Bricks: Knowledge Assistants (KA) for document Q&A and Supervisor Agents for multi-agent orchestration (MAS).",
-      "files": [
-        "SKILL.md",
-        "agents/openai.yaml",
-        "assets/databricks.png",
-        "assets/databricks.svg",
-        "references/1-knowledge-assistants.md",
-        "references/2-supervisor-agents.md"
-      ],
-      "repo_dir": "skills",
-      "version": "0.1.0"
-    },
     "databricks-ai-functions": {
-      "description": "Use Databricks built-in AI Functions (ai_classify, ai_extract, ai_summarize, ai_mask, ai_translate, ai_fix_grammar, ai_gen, ai_analyze_sentiment, ai_similarity, ai_parse_document, ai_prep_search, a...",
+      "description": "Use Databricks built-in AI Functions (ai_classify, ai_decide, ai_extract, ai_summarize, ai_mask, ai_translate, ai_fix_grammar, ai_gen, ai_analyze_sentiment, ai_similarity, ai_parse_document, ai_pre...",
       "files": [
         "SKILL.md",
         "agents/openai.yaml",
@@ -26,7 +13,7 @@
         "references/3-ai-forecast.md"
       ],
       "repo_dir": "skills",
-      "version": "0.2.0"
+      "version": "0.3.0"
     },
     "databricks-ai-runtime": {
       "description": "Databricks AI Runtime, the `databricks air` CLI commands for submitting and managing GPU training workloads on Databricks serverless compute. Use for: writing and submitting `databricks air` worklo...",
@@ -52,10 +39,12 @@
         "references/3-filters.md",
         "references/4-examples.md",
         "references/5-troubleshooting.md",
-        "references/6-custom-visualizations.md"
+        "references/6-custom-visualizations.md",
+        "references/7-dashboard-design.md",
+        "references/8-dataset-measures.md"
       ],
       "repo_dir": "skills",
-      "version": "0.2.1"
+      "version": "0.2.3"
     },
     "databricks-app-design": {
       "description": "Design the UX of custom-code Databricks Apps (AppKit/React) data screens \u2014 KPI/overview pages, reports, charts, tables, and Genie/chat data assistants \u2014 mapped to concrete AppKit components.",
@@ -99,7 +88,7 @@
         "references/testing.md"
       ],
       "repo_dir": "skills",
-      "version": "0.1.3"
+      "version": "0.1.4"
     },
     "databricks-apps-python": {
       "description": "Python backend for Databricks Apps \u2014 FastAPI (default), Flask, Dash, Streamlit, Gradio, Reflex. **Default for a new Databricks App is `databricks-apps` (AppKit \u2014 Node/TypeScript/React) \u2014 reach for...",
@@ -205,22 +194,21 @@
       "version": "0.1.0"
     },
     "databricks-genie-agents": {
-      "description": "Create, manage, and query Databricks Genie Agents \u2014 curated, per-data natural-language agents (formerly Genie Spaces): build, export/import, migrate across workspaces, and ask questions of a *speci...",
+      "description": "Create, manage, and query Databricks Genie Agents (formerly Genie Spaces): curated agents over Unity Catalog tables, Metric Views, and documents in UC volumes.",
       "files": [
         "SKILL.md",
         "agents/openai.yaml",
         "assets/databricks.png",
         "assets/databricks.svg",
         "references/create-genie-agent.md",
-        "references/diagnose-genie-agent.md",
         "references/genie-agent-cicd.md",
-        "references/optimize-genie-agent.md",
+        "references/improve-genie-agent.md",
+        "references/legacy-ka-supervisor.md",
         "references/query-genie-agent.md",
-        "references/serialized-space.md",
         "references/uc-persistence.md"
       ],
       "repo_dir": "skills",
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     "databricks-iceberg": {
       "description": "Apache Iceberg tables on Databricks \u2014 Managed Iceberg tables, External Iceberg Reads (fka Uniform), Compatibility Mode, Iceberg REST Catalog (IRC), Iceberg v3, Snowflake interop, PyIceberg, OSS Spa...",
@@ -428,19 +416,24 @@
         "agents/openai.yaml",
         "assets/databricks.png",
         "assets/databricks.svg",
+        "references/analyze-checklist.md",
         "references/code-patterns.md",
         "references/compatibility-checks.md",
         "references/configuration-guide.md",
+        "references/debugging-errors.md",
         "references/failure-reporting.md",
         "references/install-in-databricks-genie-code.md",
         "references/jar-migration.md",
         "references/mlflow-uc-patterns.md",
+        "references/multi-notebook-workloads.md",
         "references/multi-source-enumeration.md",
         "references/networking-and-security.md",
-        "references/streaming-migration.md"
+        "references/quick-fixes.md",
+        "references/streaming-migration.md",
+        "references/testing-strategy.md"
       ],
       "repo_dir": "skills",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     "databricks-setup-local": {
       "description": "Previews, provisions, or diagnoses a uv-managed local Python .venv with `databricks environments setup-local`.",
@@ -530,7 +523,7 @@
       "version": "0.1.0"
     },
     "databricks-unstructured-pdf-generation": {
-      "description": "Build RAG / unstructured-document evaluation datasets and demo documents (e.g. for Knowledge Assistant) on Databricks: generate synthetic PDFs locally, upload to Unity Catalog volumes, and pair eac...",
+      "description": "Build RAG / unstructured-document evaluation datasets and demo documents (e.g. for a Genie Agent with an attached volume) on Databricks: generate synthetic PDFs locally, upload to Unity Catalog vol...",
       "files": [
         "SKILL.md",
         "agents/openai.yaml",
@@ -591,7 +584,7 @@
         "references/typescript-sdk.md"
       ],
       "repo_dir": "skills",
-      "version": "0.2.0"
+      "version": "0.2.1"
     },
     "spark-python-data-source": {
       "description": "Build custom Python data sources for Apache Spark using the PySpark DataSource API \u2014 batch and streaming readers/writers for external systems. Use this skill whenever someone wants to connect Spark to an external system (database, API, message queue, custom protocol), build a Spark connector or plugin in Python, implement a DataSourceReader or DataSourceWriter, pull data from or push data to a system via Spark, or work with the PySpark DataSource API in any way. Even if they just say \"read from X in Spark\" or \"write DataFrame to Y\" and there's no native connector, this skill applies.",

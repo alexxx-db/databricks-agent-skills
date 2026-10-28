@@ -23,7 +23,6 @@
     "serverless-compute",
     "serverless",
     "vector-search",
-    "agent-bricks",
     "ai-functions",
     "ai-runtime",
     "aibi-dashboards",
